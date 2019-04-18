@@ -101,8 +101,8 @@ class CatCodingPanel {
         this._panel.onDidChangeViewState(e => {
             if (this._panel.visible) {
                 this._update();
-                vscode.window.showInformationMessage(`State: isActive:${e.webviewPanel.active}; isVisible:${e.webviewPanel.visible}; viewColumn:${e.webviewPanel.viewColumn}`);
             }
+            vscode.window.showInformationMessage(`State: isActive:${e.webviewPanel.active}; isVisible:${e.webviewPanel.visible}; viewColumn:${e.webviewPanel.viewColumn}`);
         }, null, this._disposables);
 
         // Handle messages from the webview
