@@ -1,8 +1,8 @@
-# Cat Coding — A Webview API Sample
+# Test - A Webview API test Sample
 
 Demonstrates VS Code's [webview API](https://code.visualstudio.com/docs/extensions/webview). This includes:
 
-- Creating and showing a basic webview.
+- Creating and showing a basic webview (for the different viewColumns).
 - Dynamically updating a webview's content.
 - Loading local content in a webview.
 - Running scripts in a webview.
@@ -10,8 +10,6 @@ Demonstrates VS Code's [webview API](https://code.visualstudio.com/docs/extensio
 - Sending messages from a webview to an extension.
 - Using a basic content security policy.
 - Webview lifecycle and handling dispose.
-- Saving and restoring state when the panel goes into the background.
-- Serialization and persistence across VS Code reboots.
 
 ## Running the example
 

@@ -1,0 +1,63 @@
+{
+  "name": "cat-coding",
+  "description": "Test - A Webview API test Sample",
+  "version": "0.0.1",
+  "publisher": "olexii4",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:catCoding.start.one",
+    "onCommand:catCoding.start.two",
+    "onCommand:catCoding.start.three",
+    "onCommand:catCoding.start.four",
+    "onCommand:catCoding.doRefactor",
+    "onWebviewPanel:catCoding"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "catCoding.start.one",
+        "title": "Start cat coding session(column One)",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "catCoding.start.two",
+        "title": "Start cat coding session(column Two)",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "catCoding.start.three",
+        "title": "Start cat coding session(column Three)",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "catCoding.start.four",
+        "title": "Start cat coding session(column Four)",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "catCoding.doRefactor",
+        "title": "Do some refactoring",
+        "category": "Cat Coding"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "dependencies": {
+    "vscode": "^1.1.18"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "typescript": "^2.9.2"
+  }
+}
